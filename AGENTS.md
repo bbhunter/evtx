@@ -25,8 +25,8 @@ Current release behavior in this repo:
    - `git push origin vX.Y.Z`
 5. Verify release:
    - Confirm crates.io shows the new versions.
-   - Confirm `/Users/omerba/Workspace/evtx/.github/workflows/release.yml` succeeds and assets are attached.
-
-### Notes
-- `evtx` depends on `utf16-simd` via `path + version`; if `evtx` starts requiring a new `utf16-simd` version, publish `utf16-simd` first.
-- Do not use `/Users/omerba/Workspace/evtx/release.py` (removed; no longer reflects this flow).
+   - Confirm CI succeeded via GitHub CLI:
+     - `gh run list --workflow release.yml --limit 5`
+     - `gh run watch <run-id>`
+   - Confirm release artifacts exist:
+     - `gh release view vX.Y.Z`
