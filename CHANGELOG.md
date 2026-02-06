@@ -8,6 +8,14 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [0.11.1 - 2026-02-06]
+
+### Security
+- Updated `time` to `0.3.47`.
+- Updated `bytes` to `1.11.1` (root crate and `utf16-simd` lockfile).
+
+**Full Changelog**: [`v0.11.0...v0.11.1`](https://github.com/omerbenamram/evtx/compare/v0.11.0...v0.11.1)
+
 ## [0.11.0 - 2026-01-03]
 
 ### Breaking changes (WEVT_TEMPLATE cache)
